@@ -1,0 +1,23 @@
+{
+  "name": "gulp-aes",
+  "version": "1.0.0",
+  "description": "gulp-aes",
+  "author": "Sam Sha <sam_sha@sohu.com>",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:samsha1971/glup-aes.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp-util": "~3.0.8",
+    "event-stream": "~3.3.4",
+    "mocha": "~5.2.0"
+  },
+  "engines": {
+    "node": ">= 8.11.2",
+    "npm": ">= 5.6.0"
+  }
+}
