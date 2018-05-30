@@ -1,0 +1,17 @@
+{
+  "name": "glup-aes-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-aes": "^1.0.2",
+    "gulp-rename": "^1.2.3"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}

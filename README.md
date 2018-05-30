@@ -2,6 +2,8 @@
 
 gulp-aes, crypto files with AES.
 
+## Usage
+
     var gulp_aes = require('gulp-aes');
     gulp_aes.enc()
     gulp_aes.dec()
@@ -9,7 +11,7 @@ gulp-aes, crypto files with AES.
     gulp_aes.enc(key)
     gulp_aes.dec(key)
 
-## Usage
+## Example
 
 gulpfile：
 
@@ -17,11 +19,18 @@ gulpfile：
     var gulp_aes = require('gulp-aes');
     var gulp_rename = require('gulp-rename');
 
-    gulp.task('javascripts', function () {
-    gulp.src(['**/*.js', '!target/**', '!node_modules/**', '!gulpfile.js'])
-    .pipe(gulp_aes.enc())
-    .pipe(gulp_rename({extname: ".jsa"}))
-    .pipe(gulp.dest('target'));
+    gulp.task('to_jsa', function () {
+      gulp.src(['js/**/*.js'])
+        .pipe(gulp_aes.enc())
+      .pipe(gulp_rename({extname: ".jsa"}))
+        .pipe(gulp.dest('target'));
     });
 
-    gulp.task('default', ['javascripts']);
+    gulp.task('to_js', function () {
+      gulp.src(['jsa/**/*.jsa'])
+        .pipe(gulp_aes.dec())
+      .pipe(gulp_rename({extname: ".js"}))
+        .pipe(gulp.dest('target'));
+    });
+
+    gulp.task('default', ['to_jsa','to_js']);
