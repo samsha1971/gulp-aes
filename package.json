@@ -1,6 +1,6 @@
 {
   "name": "gulp-aes",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "gulp-aes",
   "author": "Sam Sha <sam_sha@sohu.com>",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:samsha1971/glup-aes.git"
+    "url": "git@github.com:samsha1971/gulp-aes.git"
   },
   "dependencies": {},
   "devDependencies": {
